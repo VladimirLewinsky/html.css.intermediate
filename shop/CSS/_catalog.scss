@@ -10,7 +10,7 @@ $brandcolor: #F16D7F;
 
 .categories {
     color: $brandcolor;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -21,7 +21,7 @@ $brandcolor: #F16D7F;
 
 .little_categories {
     color: #6F6E6E;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -58,7 +58,7 @@ $brandcolor: #F16D7F;
 
 .slogan {
     color: #222;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
@@ -68,7 +68,7 @@ $brandcolor: #F16D7F;
 
 .little_slogan {
     color: #222;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -97,7 +97,7 @@ $brandcolor: #F16D7F;
 .arrivals_text {
 
     color: $brandcolor;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -108,7 +108,7 @@ $brandcolor: #F16D7F;
 
 .arrivals_nav_text {
     color: #636363;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -144,7 +144,7 @@ details>summary {
     // justify-content: space-between;
     flex-direction: row;
     z-index: 5;
-    
+
     padding-bottom: 64px;
 
     &_categories {
@@ -156,19 +156,20 @@ details>summary {
     }
 
     &_categories_summary {
-       
+
         display: flex;
         flex-direction: row;
         color: #6F6E6E;
-        font-family: Lato;
+        font-family: 'latoregular';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
 
-    &_categories_container {
-        margin-left: 10px;
+    .categories_icon {
+        padding-left: 10px;
+        padding-top: 7px;
     }
 
     &_drop_sizes {
@@ -200,7 +201,7 @@ details>summary {
 
 .filter {
     color: #000;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -217,6 +218,9 @@ details>summary {
 
 
     }
+    &_icon{
+        padding-top: 2px;
+    }
 
     &_drop_menu {
         width: 360px;
@@ -232,6 +236,7 @@ details>summary {
         padding-left: 16px;
         padding-bottom: 16px;
         gap: 18px;
+        z-index: 10;
 
     }
 
@@ -249,7 +254,7 @@ details>summary {
         border-left: 5px solid $brandcolor;
         padding-left: 11px;
         color: #6F6E6E;
-        font-family: Lato;
+        font-family: 'latoregular';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -286,7 +291,7 @@ details>summary {
 
 .change_color_items {
     color: #6F6E6E;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -331,17 +336,17 @@ details[open] {
     padding-top: 25px;
     padding-left: 16px;
     color: #000;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 13px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 }
 
 .about {
     padding: 16px;
     color: #5D5D5D;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -352,7 +357,7 @@ details[open] {
 .price {
     padding-left: 16px;
     color: $brandcolor;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -421,7 +426,7 @@ details[open] {
 
 .add_text {
     color: #FFF;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -483,7 +488,7 @@ details[open] {
 
         &_items {
             color: #C4C4C4;
-            font-family: Lato;
+            font-family: 'latoregular';
             font-size: 16px;
             font-style: normal;
             font-weight: 300;
@@ -496,12 +501,56 @@ details[open] {
     color: $brandcolor;
 }
 
+.promo {
+    background-color: #222224;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 103px;
+    padding-bottom: 104px;
+
+    &_footer {
+        text-align: center;
+        width: 360px;
+    }
+
+    &_title {
+        color: #FBFBFB;
+        font-family: 'latoregular';
+        font-size: 19.96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 19px;
+    }
+
+    &_text {
+        color: #FBFBFB;
+        text-align: center;
+        font-family: 'latoregular';
+        font-size: 13.972px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        
+        padding-top: 16px;
+    }
+}
+
+
+
+
+
+
 
 @media(max-width:1140px) {
 
     .bot {
         padding-top: 24px;
     }
+
 
     .last_item {
         display: none;
@@ -516,6 +565,7 @@ details[open] {
         max-width: 1138px;
         padding-left: 9px;
         padding-right: 9px;
+        gap: 16px;
     }
 
     .sorts {
@@ -524,7 +574,84 @@ details[open] {
         padding-right: 16px;
         padding-left: 16px;
     }
+
     .filter_drop_menu {
         left: -49px;
     }
+
+    .promo {
+        flex-direction: column-reverse;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        &_text {
+            padding-bottom: 48px;
+        }
+    }
+
+
+}
+
+@media(max-width:425px) {
+    .new_arrivals_block {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        padding-top: 7px;
+        padding-bottom: 29px;
+
+    }
+
+    .bot {
+        .sorts {
+            gap: 61px;
+
+            .filter {
+                &_summary {
+                    left: -15px;
+
+                    .filter_main {
+                        display: none;
+                    }
+                }
+
+                .filter_icon {
+
+                    width: 37px;
+                    height: 25px;
+
+                }
+
+            }
+
+            &_categories {
+                padding-left: 0px;
+                gap: 23px;
+
+                &_summary {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .promo {
+        flex-direction: column;
+      
+        &_footer {
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            
+            
+        }
+
+        &_text {
+            font-size: 13px;
+            width: 351px;
+            
+        }
+    }
+
+
 }

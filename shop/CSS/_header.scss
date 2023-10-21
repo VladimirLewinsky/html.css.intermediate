@@ -142,3 +142,25 @@ $brandcolor: #F16D7F;
         }
     }
 }
+
+@media(max-width:425px) {
+    .header {
+        .man_icon {
+            display: none;
+        }
+        &__rightmenu{
+            &_basket{
+                display: none;
+                &::before{
+                    display: none;
+                }
+            }
+            &_dropdown{
+                .dropdown__menu{
+                    right: -29px;
+                }
+            }
+        }
+        
+    }
+}

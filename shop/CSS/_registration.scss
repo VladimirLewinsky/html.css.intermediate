@@ -63,7 +63,7 @@ $brandcolor: #F16D7F;
 
         &_input {
             height: 45px;
-            margin-top: 20px;
+            margin-top: 21px;
             padding-left: 15px;
             color: #B1B1B1;
             font-family: 'latoligth';
@@ -165,7 +165,7 @@ $brandcolor: #F16D7F;
         }
 
         &_list::before {
-            content: url(/HomeWork4/img/icon/Vector.svg);
+            content: url(/img/icon/Vector.svg);
             padding-right: 23px;
         }
     }
@@ -174,17 +174,10 @@ $brandcolor: #F16D7F;
 
 @media(max-width:1024px) {
 
-  
-    // .center{
-    //     padding-left: 32px !important;
-    //     padding-right: 32px !important; 
-    // }
-
-
     .registration {
         gap: 22px;
         justify-content: center;
-        
+
         // margin: auto;
         &__form-rigth {
             font-size: 14px;
@@ -192,14 +185,29 @@ $brandcolor: #F16D7F;
         }
     }
 
-    .subscribe {
-        display: flex;
-        align-items: center;
-        padding-top: 64px;
-        padding-bottom: 219px;
-        flex-direction: column;
-        height: 693px;
-        background-image: url(/shop/img/Layer\ 41\ \(1\).png);
+
+}
+
+@media(max-width:425px) {
+    .arrivals {
+        justify-content: center;
     }
+
+    .registration {
+        flex-direction: column;
+        gap: 40px;
+
+        &__form-left {
+            min-width: 349px;
+        }
+
+        &__form-rigth {
+            font-size: 16px;
+        }
+
+    }
+
+   
+
 
 }
